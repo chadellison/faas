@@ -3,7 +3,7 @@ module Api
     class FunctionsController < ApplicationController
       def create
         function = Function.create(method: function_params[:function])
-        url = "#{request.host}:#{request.port}#{request.path}/#{function.id}"
+        url = "https://#{request.host}#{request.path}/#{function.id}"
         render json: { data: url }, status: 201
       end
 
