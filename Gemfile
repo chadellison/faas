@@ -9,6 +9,8 @@ gem 'puma', '~> 4.1'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'faker'
 gem 'httparty'
+gem 'redis'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'rspec-rails'
